@@ -1,0 +1,21 @@
+{
+  "name": "SecureUtil",
+  "version": "0.0.1",
+  "description": "This is a Security App, made for your care and love ones.",
+  "cordova": {
+    "id": "com.secureYou.dev",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "author": "Rajib Ruj",
+  "license": "ISC"
+}

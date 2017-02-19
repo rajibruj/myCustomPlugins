@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.secureYou.dev" version="o.o.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>
+		SecureUtil
+	</name>
+	<AUTHOR>
+		Rajib
+	</AUTHOR>
+	<js-module name="SecureUtil" src="www/SecureUtil.js">
+		<clobbers target="SecureUtil" />
+		<clobbers target="cordova.plugins.SecureUtil" />
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="SecureUtil">
+				<param name="android-package" value="com.secureYou.dev.SecureUtil" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/SecureUtil.java" target-dir="src/com/secureYou/dev/SecureUtil" />
+	</platform>
+    
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="SecureUtil">
+				<param name="ios-package" value="SecureUtil" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/SecureUtil.m" />
+	</platform>
+	<platform name="windows">
+		<js-module name="SecureUtil" src="src/windows/SecureUtil.js">
+			<runs target="" />
+		</js-module>
+	</platform>
+</plugin>

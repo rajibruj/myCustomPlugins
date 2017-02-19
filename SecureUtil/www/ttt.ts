@@ -1,0 +1,1 @@
+<clobbers target="cordova.plugins.SecureUtil" />
